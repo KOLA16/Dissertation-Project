@@ -29,14 +29,14 @@ performance when the method is used.
 In the first stage of the project, I reproduced experiments from the [Atttracting and Dispersing](https://sites.google.com/view/aad-sfda)(AaD) paper which, at the time of working on this project, declared the SOTA level performance on the commonly used image classification domain adaptation benchmarks. Experiments showed, that using the AaD method with ResNet-50 and ResNet-101 models improved their classification accuracy scores (in SFUDA setting) on the Office-31, Office-Home, and VisDA-C datasets by ~10.00%, ~25.00%, and ~35.00%
 respectively. These results agreed with those declared by the authors of the original paper. The figure below presents example of changes in the distribution of features observed before and after application of the AaD method:
 
-![]()
+![](./images/office31-tsne.png)
 
 ### II. Applying Attracting and Dispersing to Graph Source-Free Unsupervised Domain Adaptation
 The second stage of the project aimed to evaluate usability of the AaD technique with selected graph neural network models (GCN and GIN) in the graph classification SFUDA setting. First, I downloaded the commonly used public graph classification benchmark datasets and preprocessed
 them to create the SFUDA experimental scenarios similar to the ones defined for visual
 experiments. Next, I modified the Open-Graph Benchmark (OGB) [repository](https://github.com/snap-stanford/ogb/tree/master/examples/graphproppred) of graph classification examples to make it compatible with the AaD framework and enable execution of my own experimental setting. Experiments showed classification accuracy gain of ~2.00% and ~4.00% on ogbg-molbbbp and ogbg-ppa respectively when the AaD was applied. 
 
-![]()
+![](./images/molbbbp-tsne.png)
 
 
 
